@@ -1,0 +1,17 @@
+mkdir survey_form_2
+cd survey_form_2
+npm init -y
+npm install
+sudo npm install --save express ejs body-parser express-session socket.io
+touch server.js
+touch .gitignore
+
+#put the following line into .gitignore
+node_modules/
+# save and exit editor
+
+mkdir views
+cd views
+touch index.ejs
+cd ..
+nodemon server.js
